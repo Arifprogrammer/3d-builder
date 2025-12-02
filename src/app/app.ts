@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+// import { RouterOutlet } from '@angular/router';
+import { NgtCanvas } from 'angular-three';
+import { Cup } from './pages/cup/cup';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [/* RouterOutlet, */ NgtCanvas],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('3D-builder');
+  scene = Cup;
 }

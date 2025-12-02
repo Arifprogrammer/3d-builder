@@ -1,5 +1,22 @@
-<!-- <ngt-mesh #mesh>
-  <ngt-box-geometry />
-  <ngt-mesh-basic-material color="hotpink" />
-</ngt-mesh> -->
-<ngt-premitive *args="[model()]"></ngt-premitive>
+<!-- ------------------- Cup ---------------------- -->
+<ngt-ambient-light [intensity]="1" />
+<ngt-directional-light [intensity]="2" [position]="[0, 1, 1]" />
+<ngt-directional-light [intensity]="2" [position]="[0, 1, -1]" />
+<ngt-point-light [intensity]="0.5" [position]="[1, 1, 0]" />
+<ngt-point-light [intensity]="0.5" [position]="[1, 1, 0]" />
+<ngt-primitive *args="[model()!]" [position]="[0, -0.7, -0.1]" />
+<ngt-orbit-controls *args="[camera(), glDom()]" />
+
+<!-- ------------------- Car ---------------------- -->
+<!-- <ngt-perspective-camera [makeDefault]="true" [position]="[5, 3, 5]" [fov]="75" />
+<ngt-ambient-light [intensity]="0.4" />
+<ngt-directional-light [intensity]="1" [position]="[10, 10, 5]" [castShadow]="true" />
+<ngt-directional-light [intensity]="0.5" [position]="[-10, 10, -5]" />
+<ngt-point-light [intensity]="0.3" [position]="[0, 5, 0]" />
+<ngt-primitive
+  *args="[model()]"
+  [position]="[0, 0, 0]"
+  [scale]="[1, 1, 1]"
+  [rotation]="[0, 0, 0]"
+></ngt-primitive> -->
+<!-- <ngt-orbit-controls [enableDamping]="true" [dampingFactor]="0.05" [target]="[0, 0, 0]" /> -->

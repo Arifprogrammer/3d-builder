@@ -1,3 +1,7 @@
-<div class="min-h-screen bg-gray-100">
-  <ngt-canvas [sceneGraph]="scene"></ngt-canvas>
+<div class="min-h-screen bg-gray-100 flex items-center justify-center">
+  <ngt-canvas
+    [sceneGraph]="scene"
+    [camera]="{ zoom: 4, position: [5, 3, 0] }"
+    class="!size-96"
+  ></ngt-canvas>
 </div>

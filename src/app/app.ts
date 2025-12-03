@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
 import { NgtCanvas } from 'angular-three';
 import { Cup } from './pages/cup/cup';
+import { Car } from './pages/car/car';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,5 @@ import { Cup } from './pages/cup/cup';
   styleUrl: './app.css',
 })
 export class App {
-  scene = Cup;
+  scene = Car;
 }

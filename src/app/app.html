@@ -1,7 +1,15 @@
 <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-  <ngt-canvas
+  <!-- ------------------- Cup ---------------------- -->
+  <!-- <ngt-canvas
     [sceneGraph]="scene"
     [camera]="{ zoom: 4, position: [5, 3, 0] }"
     class="!size-96"
+  ></ngt-canvas> -->
+  <!-- ------------------- Car ---------------------- -->
+  <ngt-canvas
+    [sceneGraph]="scene"
+    [gl]="{ antialias: true }"
+    class="!size-[50rem]"
+    [camera]="{ zoom: 2, position: [6, 2, 10] }"
   ></ngt-canvas>
 </div>

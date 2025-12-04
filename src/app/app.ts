@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NgtCanvas } from 'angular-three';
 import { Cup } from './pages/cup/cup';
 import { Car } from './pages/car/car';
+import { SuperCar } from './pages/supercar/supercar';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,5 @@ import { Car } from './pages/car/car';
   styleUrl: './app.css',
 })
 export class App {
-  scene = Car;
+  scene = SuperCar;
 }

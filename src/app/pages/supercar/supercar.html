@@ -1,0 +1,18 @@
+<ngt-color *args="['#1a1a1a']" attach="background" />
+<ngt-fog *args="['#1a1a1a', 50, 200]" attach="fog" />
+
+<ngt-ambient-light [intensity]="0.4" />
+<ngt-hemisphere-light [intensity]="0.8" [color]="'#ffffff'" [groundColor]="'#222222'" />
+<ngt-directional-light [intensity]="2.0" [position]="[10, 15, 10]" [castShadow]="true" [color]="'#ffffff'" />
+<ngt-directional-light [intensity]="1.2" [position]="[-8, 10, -8]" [color]="'#e8f4f8'" />
+<ngt-point-light [intensity]="1.0" [position]="[15, 8, 5]" [color]="'#ffffff'" />
+<ngt-point-light [intensity]="0.8" [position]="[-10, 8, -5]" [color]="'#b8d4e8'" />
+<ngt-spot-light [intensity]="1.5" [position]="[0, 20, 0]" [angle]="0.5" [penumbra]="0.5" [castShadow]="true" />
+
+<ngt-mesh [receiveShadow]="true" [rotation]="[-Math.PI / 2, 0, 0]" [position]="[0, -13, 0]">
+  <ngt-plane-geometry *args="[500, 500]" />
+  <ngt-mesh-standard-material [color]="'#3a3a3a'" [roughness]="0.8" [metalness]="0.2" />
+</ngt-mesh>
+
+<ngt-primitive *args="[model()!]" [scale]="[20, 20, 20]" [position]="[-2, 7, 0]" />
+<ngt-orbit-controls *args="[camera(), glDom()]" />

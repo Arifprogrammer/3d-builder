@@ -6,10 +6,17 @@
     class="!size-96"
   ></ngt-canvas> -->
   <!-- ------------------- Car ---------------------- -->
+  <!-- <ngt-canvas
+  [sceneGraph]="scene"
+  [gl]="{ antialias: true }"
+  class="!size-[50rem]"
+  [camera]="{ zoom: 2, position: [6, 2, 10] }"
+  ></ngt-canvas> -->
+  <!-- ------------------- Super Car ---------------------- -->
   <ngt-canvas
     [sceneGraph]="scene"
     [gl]="{ antialias: true }"
-    class="!size-[50rem]"
-    [camera]="{ zoom: 2, position: [6, 2, 10] }"
+    class="!h-[50rem] !w-[80rem] rounded-xl shadow-2xl"
+    [camera]="{ zoom: 9, position: [6, 2, -8] }"
   ></ngt-canvas>
 </div>

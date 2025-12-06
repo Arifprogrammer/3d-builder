@@ -1,6 +1,6 @@
 <ngt-color *args="['#000000']" attach="background" />
 
-<ngt-ambient-light [intensity]="0.4" />
+<ngt-ambient-light [intensity]="1" />
 <ngt-hemisphere-light [intensity]="0.8" [color]="'#ffffff'" [groundColor]="'#222222'" />
 <ngt-directional-light
   [intensity]="2.0"
@@ -18,6 +18,14 @@
   [penumbra]="0.5"
   [castShadow]="true"
 />
+
+<!-- Light Helpers -->
+<!-- <ngt-primitive *args="[hemisphereHelper]" />
+<ngt-primitive *args="[directionalHelper1]" />
+<ngt-primitive *args="[directionalHelper2]" />
+<ngt-primitive *args="[pointLightHelper1]" />
+<ngt-primitive *args="[pointLightHelper2]" />
+<ngt-primitive *args="[spotLightHelper]" /> -->
 
 <ngt-primitive *args="[model()!]" [scale]="[20, 20, 20]" [position]="[-2, 7, 0]" />
 <ngt-orbit-controls *args="[camera(), glDom()]" />
